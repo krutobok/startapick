@@ -7,6 +7,7 @@ $(function(){
 
     $(document).ready(function() {
         $('.advantages__bottom').css("margin-left", $advantages + "px");
+        $('.team-bg').css("left", $advantages + "px");
     });
 
   

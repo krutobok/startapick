@@ -17,7 +17,7 @@
 
 
 .header{
-  background-color: rgba(#EDEDED, 0.15);
+  background-color: rgba(#EDEDED, 0.05);
   min-height: 80px;
   width: 100%;
   &__logo{
@@ -54,7 +54,7 @@
 }
 
 .first-screen{
-  background-color: rgba(#EDEDED, 0.15);
+  background-color: rgba(#EDEDED, 0.05);
   min-height: 720px;
   padding-top: 25px;
   padding-bottom: 110px;
@@ -119,9 +119,10 @@
 .advantages{
   overflow-x: hidden;
   margin-bottom: 150px;
+  background-color: #FFFFFF;
   &__top{
     width: 100%;
-    background-color: rgba(#EDEDED, 0.15);
+    background-color: rgba(#EDEDED, 0.05);
     padding-bottom: 60px;
   }
   &__title{
@@ -199,6 +200,7 @@
 
 
 .information{
+  background-color: #FFFFFF;
   margin-bottom: 150px;
   &:nth-child(even){
     .information__inner{
@@ -271,6 +273,122 @@
     }
   }
 
+}
+
+.team{
+  background-color: rgba(#EDEDED, 0.05);
+  position: relative;
+  padding-bottom: 150px;
+  overflow-x: hidden;
+  z-index: -2;
+
+  &-bg{
+    background-color: #FFFFFF;
+    position: absolute;
+    background-image: url('../img/advantages.svg');
+    width: 2324px;
+    height: 390px;
+    top: 0;
+    z-index: -1;
+    transform: rotate(180deg);
+  }
+  &__top{
+    padding-top: 53px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  &__title{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 20px;
+  }
+  &__text{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  &__item{
+    display: flex;
+    flex-basis: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    &:nth-child(4){
+      justify-content: flex-end;
+      margin-bottom: 54px;
+    }
+    &:nth-child(2){
+      flex-direction: row-reverse;
+      .team__item-img{
+        margin-left: 16px;
+        margin-right: 0;
+      }
+      .team__item-text{
+        &::after{
+          left: auto;
+          right: 40px;
+        }
+      }
+    }
+    &:nth-child(3){
+      flex-direction: row-reverse;
+      justify-content: center;
+      margin-bottom: 54px;
+      .team__item-img{
+        margin-left: 16px;
+        margin-right: 0;
+      }
+      .team__item-text{
+        &::after{
+          left: auto;
+          right: 40px;
+        }
+      }
+    }
+  }
+  &__item-text{
+    max-width: 345px;
+    padding: 15px 20px;
+    box-shadow: 0 2px 15px rgba(23, 58, 86, 0.1);
+    border-radius: 26.5px;
+    position: relative;
+    z-index: 1;
+    &::after{
+      position: absolute;
+      z-index: -1;
+      //box-shadow: 0 2px 5px rgba(23, 58, 86, 0.1);
+      content: '';
+      width: 17px;
+      height: 17px;
+      border-radius: 50%;
+      background: #FFFFFF;
+      left: 40px;
+      bottom: -6px;
+    }
+  }
+  &__item-img{
+    margin-right: 16px;
+    width: 98px;
+    height: 98px;
+  }
+  &__items{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__btn{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 15px 35px;
+    margin: 0 auto;
+    display: block;
+    max-width: 330px;
+    text-align: center;
+  }
 }
 
 
