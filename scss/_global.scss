@@ -1,0 +1,98 @@
+html{
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+  box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body{
+  font-family: 'Inter', sans-serif;
+  color: $main_color;
+  background-color: #fff;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  font-size: inherit;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a{
+  text-decoration: none;
+}
+
+.container-big{
+  max-width: 1150px;
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.header-container{
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 100%;
+}
+.container{
+  max-width: 1120px;
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+.btn{
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 4px;
+  display: inline-block;
+}
+.btn-transparent{
+  border: 1px solid #BCD0E5;
+  background-color: transparent;
+  color: $main_color;
+}
+
+.btn-green{
+  background-color: $btn_color;
+  color: #FFFFFF;
+}
