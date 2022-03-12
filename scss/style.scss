@@ -280,7 +280,7 @@
   position: relative;
   padding-bottom: 150px;
   overflow-x: hidden;
-  z-index: -2;
+  //z-index: -2;
 
   &-bg{
     background-color: #FFFFFF;
@@ -291,6 +291,7 @@
     top: 0;
     z-index: -1;
     transform: rotate(180deg);
+    pointer-events: none;
   }
   &__top{
     padding-top: 53px;
@@ -391,5 +392,91 @@
   }
 }
 
+.blog{
+  padding-bottom: 150px;
+  &__title{
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 51px;
+    margin-bottom: 8px;
+  }
+  &__text{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 33px;
+  }
+  &__item{
+    margin-bottom: 64px;
+    border: 1px solid #DEDEDE;
+    border-radius: 8px;
+    max-width: 348px;
+    min-height: 359px;
+    width: 100%;
+    height: 100%;
+    margin-right: 32px;
+    &.active{
+      transform: rotate(150deg);
+    }
+  }
+  &__img{
+    width: 346px;
+    height: 185px;
+  }
+  &__link-img{
+    display: inline-block;
+    padding-bottom: 24px;
+  }
+  &__item-content{
+
+  }
+  &__item-links{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 0 24px;
+    a{
+      color: inherit;
+      span{
+        font-weight: 700;
+      }
+    }
+  }
+  &__item-title{
+    padding: 12px 24px 40px 24px;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    color: $main_color;
+    letter-spacing: 0.5px;
+    &.active{
+      color: $btn_color;
+    }
+  }
+  &__items {
+    .slick-dots {
+      display: flex;
+      justify-content: center;
+      li {
+        width: 16px;
+        height: 16px;
+        background: #EFEFEF;
+        border-radius: 50%;
+        border: none;
+        margin-right: 10px;
+        &:last-child{
+          margin-right: 0;
+        }
+        button {
+          display: none;
+        }
+      }
+      .slick-active {
+        background: $btn_color;
+      }
+    }
+  }
+}
 
 @import "media";
