@@ -479,4 +479,124 @@
   }
 }
 
+
+.price{
+  padding-bottom: 150px;
+  &__inner{
+    text-align: center;
+  }
+  &__title{
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 51px;
+    margin-bottom: 16px;
+  }
+  &__subtitle{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 44px;
+  }
+  &__items{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item{
+    padding: 24px 20px 32px 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    width: 323px;
+    height: 456px;
+    align-items: center;
+  }
+  &__item-title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    color: $main_color;
+    margin-bottom: 12px;
+  }
+  &__item-subtitle{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    color: $main_color;
+    margin-bottom: 12px;
+  }
+  &__item-price{
+    font-weight: 700;
+    font-size: 76px;
+    line-height: 100px;
+    letter-spacing: 0.2px;
+    &__inner{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 154px;
+      margin-bottom: 16px;
+      position: relative;
+      color: $btn_color;
+      &::after{
+        content: '$';
+        position: absolute;
+        color: inherit;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: 0.1px;
+        left: 61px;
+        top: 21px;
+      }
+      &::before{
+        content: 'за месяц';
+        position: absolute;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.1px;
+        color: #E0E0E0;
+        left: 61px;
+        bottom: 24px;
+      }
+      &--3{
+        width: 183px;
+        &::after, &::before{
+          left: 98px;
+        }
+      }
+    }
+  }
+  &__item-benefits{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: $main_color;
+    letter-spacing: 0.2px;
+    margin-bottom: 38px;
+  }
+  &__item-benefits__text{
+    margin-bottom: 16px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  &__btn{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.075em;
+    padding: 11px 21px;
+    color: #FFFFFF;
+  }
+}
+
+
+
+
+
+
 @import "media";
