@@ -23,5 +23,25 @@ $(function(){
     }, function () {
         $( ".blog__item-title", this ).removeClass( "active" );
     })
+
+
+
+
+
+    $('.price__item').hover(function () {
+        $( ".price__item-title", this ).addClass( "active" );
+        $( ".price__item-subtitle", this ).addClass( "active" );
+        $( ".price__item-price__inner", this ).addClass( "active" );
+        $( ".price__item-benefits", this ).addClass( "active" );
+        $( ".price__btn", this ).addClass( "active" );
+        $(this).addClass( "active" );
+    }, function () {
+        $( ".price__item-title", this ).removeClass( "active" );
+        $( ".price__item-subtitle", this ).removeClass( "active" );
+        $( ".price__item-price__inner", this ).removeClass( "active" );
+        $( ".price__item-benefits", this ).removeClass( "active" );
+        $( ".price__btn", this ).removeClass( "active" );
+        $(this).removeClass( "active" );
+    })
   
 });

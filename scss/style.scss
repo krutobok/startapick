@@ -510,6 +510,9 @@
     width: 323px;
     height: 456px;
     align-items: center;
+    &.active{
+      background-color: $btn_color;
+    }
   }
   &__item-title{
     font-weight: 700;
@@ -517,6 +520,9 @@
     line-height: 40px;
     color: $main_color;
     margin-bottom: 12px;
+    &.active{
+      color: #FFFFFF;
+    }
   }
   &__item-subtitle{
     font-weight: 400;
@@ -524,6 +530,9 @@
     line-height: 40px;
     color: $main_color;
     margin-bottom: 12px;
+    &.active{
+      color: #FFFFFF;
+    }
   }
   &__item-price{
     font-weight: 700;
@@ -538,6 +547,9 @@
       margin-bottom: 16px;
       position: relative;
       color: $btn_color;
+      &.active{
+        color: #FFFFFF;
+      }
       &::after{
         content: '$';
         position: absolute;
@@ -575,6 +587,9 @@
     color: $main_color;
     letter-spacing: 0.2px;
     margin-bottom: 38px;
+    &.active{
+      color: #FFFFFF;
+    }
   }
   &__item-benefits__text{
     margin-bottom: 16px;
@@ -591,6 +606,10 @@
     letter-spacing: 0.075em;
     padding: 11px 21px;
     color: #FFFFFF;
+    &.active{
+      background-color: #FFFFFF;
+      color: $btn_color;
+    }
   }
 }
 
