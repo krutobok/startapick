@@ -20,6 +20,7 @@
             <img class="header__logo-img" src="img/logo.svg" alt="logo">
           </a>
         </div>
+
         <nav class="header__nav">
           <ul class="header__menu-list">
             <li class="header__menu-list__item"><a href="#" class="header__menu-list__link">Startupick</a></li>
@@ -35,6 +36,14 @@
             </div>
           </div>
         </nav>
+
+        <div class="header__menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+
       </div>
     </div>
   </header>
@@ -64,28 +73,37 @@
         </div>
       </div>
       <div class="advantages__bottom">
+        <div class="advantages__bg"></div>
         <div class="container">
           <div class="advantages__content">
             <div class="advantages__items">
-              <div class="advantages__item">
-                <img src="img/advantages-1.svg" alt="icon" class="advantages__item-img">
-                <h6 class="advantages__item-title">Тест первого клика</h6>
-                <p class="advantages__item-text">проверка конкретных локальных гипотез, связаных с интерфейсом</p>
+              <div class="advantages__item-inner">
+                <div class="advantages__item">
+                  <img src="img/advantages-1.svg" alt="icon" class="advantages__item-img">
+                  <h6 class="advantages__item-title">Тест первого клика</h6>
+                  <p class="advantages__item-text">проверка конкретных локальных гипотез, связаных с интерфейсом</p>
+                </div>
               </div>
-              <div class="advantages__item">
-                <img src="img/advantages-2.svg" alt="icon" class="advantages__item-img">
-                <h6 class="advantages__item-title">Опросы о дизайне</h6>
-                <p class="advantages__item-text">создания опросов с целью получения максимальной информации</p>
+              <div class="advantages__item-inner">
+                <div class="advantages__item">
+                  <img src="img/advantages-2.svg" alt="icon" class="advantages__item-img">
+                  <h6 class="advantages__item-title">Опросы о дизайне</h6>
+                  <p class="advantages__item-text">создания опросов с целью получения максимальной информации</p>
+                </div>
               </div>
-              <div class="advantages__item">
-                <img src="img/advantages-3.svg" alt="icon" class="advantages__item-img">
-                <h6 class="advantages__item-title">Тест предпочтений</h6>
-                <p class="advantages__item-text">Сравнение разных дизайнов для будущего проекта</p>
+              <div class="advantages__item-inner">
+                <div class="advantages__item">
+                  <img src="img/advantages-3.svg" alt="icon" class="advantages__item-img">
+                  <h6 class="advantages__item-title">Тест предпочтений</h6>
+                  <p class="advantages__item-text">Сравнение разных дизайнов для будущего проекта</p>
+                </div>
               </div>
-              <div class="advantages__item">
-                <img src="img/advantages-4.svg" alt="icon" class="advantages__item-img">
-                <h6 class="advantages__item-title">5-секундные тесты</h6>
-                <p class="advantages__item-text">Оценка первых впечатлений пользователя от дизайна</p>
+              <div class="advantages__item-inner">
+                <div class="advantages__item">
+                  <img src="img/advantages-4.svg" alt="icon" class="advantages__item-img">
+                  <h6 class="advantages__item-title">5-секундные тесты</h6>
+                  <p class="advantages__item-text">Оценка первых впечатлений пользователя от дизайна</p>
+                </div>
               </div>
             </div>
             <a href="#" class="advantages__btn btn btn-green">Зарегистрируйся сейчас</a>
@@ -130,7 +148,7 @@
               <li class="information__list-item">Мы ответим на ваш вопрос очень информативно, предоставив всю необходимую информацию</li>
             </ul>
           </div>
-          <div class="information__img-box">
+          <div class="information__img-box information__img-box--2">
             <img src="img/inform-2.png" alt="illustration" class="information__img information__img--2">
           </div>
         </div>
@@ -197,19 +215,22 @@
           <p class="blog__text">Мы делаем упор на эргономику и встречу вас там, где вы работаете. Это всего лишь одно нажатие клавиши.</p>
         </div>
         <div class="blog__items">
-          <div class="blog__item">
-            <a href="#" class="blog__link-img">
-              <img src="img/blog-1.jpg" alt="" class="blog__img">
-            </a>
-            <div class="blog__item-content">
-              <div class="blog__item-links">
-                <a href="#" class="blog__item-author">By <span>Wahid Ari</span></a> |
-                <a href="#" class="blog__item-data">03 March 2019</a>
+          <div class="blog__item-inner blog__item-inner--1">
+            <div class="blog__item">
+              <a href="#" class="blog__link-img">
+                <img src="img/blog-1.jpg" alt="" class="blog__img">
+              </a>
+              <div class="blog__item-content">
+                <div class="blog__item-links">
+                  <a href="#" class="blog__item-author">By <span>Wahid Ari</span></a> |
+                  <a href="#" class="blog__item-data">03 March 2019</a>
+                </div>
+                <a href="#" class="blog__item-title">Позитивное мышления
+                  и благосостояние</a>
               </div>
-              <a href="#" class="blog__item-title">Позитивное мышления
-                и благосостояние</a>
             </div>
           </div>
+          <div class="blog__item-inner">
             <div class="blog__item">
                <a href="#" class="blog__link-img">
                 <img src="img/blog-2.jpg" alt="" class="blog__img">
@@ -222,6 +243,8 @@
                 <a href="#" class="blog__item-title">Мотивация - первый шаг к успеху</a>
               </div>
             </div>
+          </div>
+          <div class="blog__item-inner blog__item-inner--3">
             <div class="blog__item">
               <a href="#" class="blog__link-img">
                  <img src="img/blog-3.jpg" alt="" class="blog__img">
@@ -234,6 +257,8 @@
                 <a href="#" class="blog__item-title">Шаги к успеху для вашего дела</a>
               </div>
             </div>
+          </div>
+          <div class="blog__item-inner">
           <div class="blog__item">
             <a href="#" class="blog__link-img">
               <img src="img/blog-1.jpg" alt="" class="blog__img">
@@ -247,6 +272,8 @@
                 и благосостояние</a>
             </div>
           </div>
+          </div>
+          <div class="blog__item-inner">
           <div class="blog__item">
             <a href="#" class="blog__link-img">
               <img src="img/blog-2.jpg" alt="" class="blog__img">
@@ -259,26 +286,32 @@
               <a href="#" class="blog__item-title">Мотивация - первый шаг к успеху</a>
             </div>
           </div>
-          <div class="blog__item">
-            <a href="#" class="blog__link-img">
-              <img src="img/blog-3.jpg" alt="" class="blog__img">
-            </a>
-            <div class="blog__item-content">
-              <div class="blog__item-links">
-                <a href="#" class="blog__item-author">By <span>Wahid Ari</span></a> |
-                <a href="#" class="blog__item-data">03 March 2019</a>
+          </div>
+          <div class="blog__item-inner">
+            <div class="blog__item">
+              <a href="#" class="blog__link-img">
+                <img src="img/blog-3.jpg" alt="" class="blog__img">
+              </a>
+              <div class="blog__item-content">
+                <div class="blog__item-links">
+                  <a href="#" class="blog__item-author">By <span>Wahid Ari</span></a> |
+                  <a href="#" class="blog__item-data">03 March 2019</a>
+                </div>
+                <a href="#" class="blog__item-title">Шаги к успеху для вашего дела</a>
               </div>
-              <a href="#" class="blog__item-title">Шаги к успеху для вашего дела</a>
             </div>
           </div>
-          </div>
+        </div>
       </div>
     </section>
+
+
     <section class="price">
       <div class="header-container">
         <div class="price__inner">
           <h3 class="price__title">Цены</h3>
           <p class="price__subtitle">Предлагаем конкурентоспособную цену</p>
+
           <div class="price__items">
             <a href="#" class="price__item">
               <h6 class="price__item-title">Free</h6>
@@ -319,7 +352,9 @@
               </div>
               <div class="price__btn btn btn-green">Заказать</div>
             </a>
+            <p class="price__btn--more btn btn-transparent">Показать ещё</p>
           </div>
+
         </div>
       </div>
     </section>
@@ -332,8 +367,8 @@
            <span>the two major realms of Classical physics: Newtonian mechanics</span></p>
           <div class="comments__items">
 
-
-            <div class="comments__item">
+            <div class="comments__item-inner">
+            <div class="comments__item comments__item--1">
               <div class="comments__stars" data-rateyo-rating="4"></div>
               <div class="comments__item-text">Startupick помог мне увидеть,
                 сколько
@@ -346,8 +381,9 @@
                 </div>
               </div>
             </div>
-
-            <div class="comments__item">
+            </div>
+              <div class="comments__item-inner">
+            <div class="comments__item comments__item--2">
               <div class="comments__stars" data-rateyo-rating="5"></div>
               <div class="comments__item-text">Startupick помог мне с реализацией моего проект. Все сделали качественно, быстро
                 и недорого </div>
@@ -359,8 +395,10 @@
                 </div>
               </div>
             </div>
+              </div>
 
-            <div class="comments__item">
+          <div class="comments__item-inner">
+            <div class="comments__item comments__item--3">
               <div class="comments__stars" data-rateyo-rating="4"></div>
               <div class="comments__item-text">Благодаря Startapick я стал успешним бизнесменом. Компания помогла мне с реализацией моего проекта</div>
               <div class="comments__item-inform">
@@ -371,6 +409,7 @@
                 </div>
               </div>
             </div>
+          </div>
 
 
           </div>
@@ -414,8 +453,7 @@
               <li class="footer__social-list__item">
                 <a href="#" class="footer__social-list__link">
                   <img src="img/social-3.svg" alt="" class="footer__social-list__img">
-                </a>
-              </li>
+                </a></li>
             </ul>
           </div>
 
