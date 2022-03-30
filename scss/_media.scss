@@ -221,6 +221,39 @@
     font-size: 14px;
     line-height: 18px;
   }
+  .btn-demo{
+    padding: 10px 50px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .modal__title {
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 600;
+  }
+  .modal__label {
+    font-size: 24px;
+    line-height: 36px;
+    display: block;
+    margin-bottom: 30px;
+  }
+  .modal__label--last {
+    margin-bottom: 80px;
+  }
+  .modal{
+    max-width: 470px;
+    width: 100%;
+  }
+  .modal__input {
+    margin-top: 6px;
+    padding: 3px 10px;
+    font-size: 18px;
+  }
+  .modal-video {
+    height: 70%;
+  }
 }
 
 
@@ -663,6 +696,13 @@
     font-size: 12px;
     line-height: 22px;
   }
+  .btn-demo{
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .modal-video {
+    height: 60%;
+  }
 }
 
 
@@ -1102,6 +1142,40 @@
     max-width: none;
     flex-basis: 50%;
   }
+  .modal {
+    padding: 20px 16px 20px;
+    max-height: 375px;
+  }
+  .modal__title {
+    font-size: 26px;
+    line-height: 34px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  .modal__label {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+  .modal__label--last {
+    margin-bottom: 30px;
+  }
+  .btn-demo{
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px 30px;
+  }
+  .modal__input {
+    margin-top: 6px;
+    padding: 3px 10px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .modal-video {
+    height: 50%;
+    padding: 20px;
+  }
 }
 
 @media (max-width: 640px){
@@ -1116,6 +1190,9 @@
   }
   .first-screen__btn-box {
     max-width: 250px;
+  }
+  .modal-video {
+    height: 40%;
   }
 }
 
@@ -1144,7 +1221,7 @@
     min-height: 550px;
   }
   .advantages__btn {
-    max-width: 195px;
+    max-width: 219px;
   }
   .advantages__item-text {
     font-size: 12px;
@@ -1171,6 +1248,9 @@
   }
   .banner__content {
     padding: 14px 5px 15px 17px;
+  }
+  .modal-video {
+    height: 35%;
   }
 }
 
@@ -1269,6 +1349,9 @@
       }
     }
   }
+  .advantages__btn {
+    max-width: 195px;
+  }
   .footer__item{
     margin-bottom: 10px;
   }
@@ -1307,6 +1390,35 @@
   }
   .footer {
     padding-bottom: 15px;
+  }
+  .btn-demo {
+    padding: 6px 15px;
+  }
+  .modal__title {
+    font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+  .modal {
+    max-width: 300px;
+  }
+  .modal__label {
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 10px;
+    &--last{
+      margin-bottom: 30px;
+    }
+  }
+  .modal__input {
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 2px;
+    margin-right: 1px;
+  }
+  .modal-video {
+    height: auto;
+    padding: 20px;
   }
 }
 

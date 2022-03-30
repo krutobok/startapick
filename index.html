@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -29,8 +30,8 @@
             <li class="header__menu-list__item"><a href="#" class="header__menu-list__link">Ресурсы</a></li>
           </ul>
           <div class="header__registration">
-            <a href="#" class="header__btn btn header__btn--transparent btn-transparent">Войти</a>
-            <a href="#" class="header__btn btn header__btn--green btn-green">Регистрация</a>
+            <a data-fancybox data-src="#modal-enter" href="javascript:;" class="header__btn btn header__btn--transparent btn-transparent">Войти</a>
+            <a data-fancybox data-src="#modal" href="javascript:;" class="header__btn btn header__btn--green btn-green">Регистрация</a>
             <div class="header__icon">
               <img src="img/icon.svg" alt="icon">
             </div>
@@ -57,8 +58,8 @@
             мысли</h2>
           <p class="first-screen__text">Инструменты, руководства, эксперты по дизайну и инновациям - все в одном месте! Самый интуитивно понятный способ представить себе будущий пользовательский опыт.</p>
           <div class="first-screen__btn-box">
-            <a href="#" class="btn btn-green first-screen__btn">Начать</a>
-            <a href="#" class="first-screen__btn--play">Смотреть видео</a>
+            <a data-fancybox data-src="#modal" href="javascript:;" class="btn btn-green first-screen__btn">Начать</a>
+            <a data-fancybox data-src="#video" href="javascript:;" class="first-screen__btn--play">Смотреть видео</a>
           </div>
         </div>
       </div>
@@ -106,7 +107,7 @@
                 </div>
               </div>
             </div>
-            <a href="#" class="advantages__btn btn btn-green">Зарегистрируйся сейчас</a>
+            <a data-fancybox data-src="#modal" href="javascript:;" class="advantages__btn btn btn-green">Зарегистрируйся сейчас</a>
           </div>
         </div>
       </div>
@@ -204,7 +205,7 @@
               <p class="team__item-text">Я помогу с маркетинговой стратегией</p>
             </div>
           </div>
-          <a href="#" class="team__btn btn-green btn">Свяжитесь с нашим экспертом</a>
+          <a data-fancybox data-src="#modal-expert" href="javascript:;" class="team__btn btn-green btn">Свяжитесь с нашим экспертом</a>
         </div>
       </div>
     </section>
@@ -313,7 +314,7 @@
           <p class="price__subtitle">Предлагаем конкурентоспособную цену</p>
 
           <div class="price__items">
-            <a href="#" class="price__item">
+            <a data-fancybox data-src="#modal-order" href="javascript:;" class="price__item">
               <h6 class="price__item-title">Free</h6>
               <p class="price__item-subtitle">Краткое описание цены</p>
               <div class="price__item-price__inner">
@@ -326,7 +327,7 @@
               </div>
               <div class="price__btn btn btn-green">Заказать</div>
             </a>
-            <a href="#" class="price__item">
+            <a data-fancybox data-src="#modal-order" href="javascript:;" class="price__item">
               <h6 class="price__item-title">Standard</h6>
               <p class="price__item-subtitle">Краткое описание цены</p>
               <div class="price__item-price__inner">
@@ -339,7 +340,7 @@
               </div>
               <div class="price__btn btn btn-green">Заказать</div>
             </a>
-            <a href="#" class="price__item">
+            <a data-fancybox data-src="#modal-order" href="javascript:;" class="price__item">
               <h6 class="price__item-title">Premium</h6>
               <p class="price__item-subtitle">Краткое описание цены</p>
               <div class="price__item-price__inner price__item-price__inner--3">
@@ -418,7 +419,7 @@
     </section>
 
     <section class="banner">
-      <a href="#" class="banner__inner">
+      <a data-fancybox data-src="#modal" href="javascript:;" class="banner__inner">
         <div class="banner__content">
           <h3 class="banner__title">Присоединяйтесь к 100 компаниям, которые развивают свой бизнес с помощью Startupick</h3>
           <div class="btn banner__btn btn-transparent">Get This</div>
@@ -524,10 +525,74 @@
       </div>
     </div>
   </footer>
+
+  <div class="modal" style="display: none;" id="modal">
+    <p class="modal__title">Регистрация в Startupick</p>
+    <form class="modal__form">
+      <label class="modal__label">
+        Ваше имя:
+        <input class="modal__input" type="text">
+      </label>
+      <label class="modal__label modal__label--last">
+        Ваш email:
+        <input class="modal__input" type="email" id="email">
+      </label>
+      <button data-fancybox-close class="btn btn-demo btn-green" type="submit">Зарегистрироваться</button>
+    </form>
+  </div>
+
+  <div class="modal" style="display: none;" id="modal-enter">
+    <p class="modal__title">Вход в аккаунт Startupick</p>
+    <form class="modal__form">
+      <label class="modal__label">
+        Ваш email:
+        <input class="modal__input" type="email">
+      </label>
+      <label class="modal__label modal__label--last">
+        Ваш пароль:
+        <input class="modal__input" type="password">
+      </label>
+      <button data-fancybox-close class="btn btn-demo btn-green" type="submit">Войти</button>
+    </form>
+  </div>
+
+  <div class="modal" style="display: none;" id="modal-expert">
+    <p class="modal__title"> Перезвоним в течение получаса</p>
+    <form class="modal__form">
+      <label class="modal__label">
+        Ваше имя:
+        <input class="modal__input" type="text">
+      </label>
+      <label class="modal__label modal__label--last">
+        Ваш номер телефона:
+        <input class="modal__input" type="tel">
+      </label>
+      <button data-fancybox-close class="btn btn-demo btn-green" type="submit">Связаться с экспертом</button>
+    </form>
+  </div>
+  <div class="modal" style="display: none;" id="modal-order">
+    <p class="modal__title"> Форма для заказа</p>
+    <form class="modal__form">
+      <label class="modal__label">
+        Ваше имя:
+        <input class="modal__input" type="text">
+      </label>
+      <label class="modal__label modal__label--last">
+        Ваш номер телефона:
+        <input class="modal__input" type="tel">
+      </label>
+      <button data-fancybox-close class="btn btn-demo btn-green" type="submit">Заказать</button>
+    </form>
+  </div>
+
+  <div class="modal-video" style="display: none;" id="video">
+    <video class="modal-video__item" src="video/video.mp4"></video>
+  </div>
   
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
   <script src="js/main.js"></script>
 </body>
