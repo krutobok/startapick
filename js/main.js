@@ -157,5 +157,23 @@ $(function(){
         })
     }
 
+    let $scroll;
+    $scroll = 100;
+    if ($(window).width() <= 730) {
+        $scroll = 50
+    }
+    if ($(window).width() <= 480) {
+       $scroll = 10
+    }
+
+    $(document).ready(function(){
+        $(".header__menu-list").on("click","a", function (event) {
+            event.preventDefault();
+            let id  = $(this).attr('href'),
+                top = $(id).offset().top - $scroll;
+            $('body,html').animate({scrollTop: top}, 1500);
+        });
+    });
+
   
 });
