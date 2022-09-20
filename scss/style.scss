@@ -53,6 +53,10 @@
   &__menu-btn{
     display: none;
   }
+  &__logo-img{
+    width: 219px;
+    height: 37px;
+  }
 }
 
 .first-screen{
@@ -219,6 +223,10 @@
     .information__inner{
       flex-direction: row-reverse;
     }
+  }
+  &__img{
+    width: 100%;
+    height: 100%;
   }
   &__advantage{
     margin-bottom: 25px;
@@ -758,6 +766,11 @@
     padding: 10px 35px;
     border-radius: 8px;
   }
+  &__img{
+    max-width: 415px;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .footer{
@@ -789,6 +802,10 @@
     &:last-child{
       margin-right: 0;
     }
+  }
+  &__social-list__img{
+    width: 40px;
+    height: 40px;
   }
   &__item-title{
     font-weight: 500;
@@ -913,6 +930,16 @@
     width: 100%;
     height: 95%;
   }
+}
+.header__icon{
+  img{
+    width: 24px;
+    height: 24px;
+  }
+}
+.comments__item-img {
+  width: 50px;
+  height: 50px;
 }
 
 @import "media";
