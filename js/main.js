@@ -6,10 +6,15 @@ $(function(){
 
 
     $(document).ready(function() {
-        $('.advantages__bg').css("left", $advantages + "px");
-        $('.team-bg').css("left", $advantages + "px");
+        $('.advantages__bg').css("transform", " translateX(" + $advantages + "px)");
+        $('.team-bg').css("transform", " translateX(", $advantages + "px)");
     });
 
+    window.onresize = () =>{
+        $advantages = ($(window).width()-2326)/2;
+        $('.advantages__bg').css("transform", " translateX(" + $advantages + "px)");
+        $('.team-bg').css("transform", " translateX(", $advantages + "px)");
+    }
 
     let $slider = ($(window).width()-744)/2;
     let $comments = ($(window).width()-340)/2;
